@@ -1,0 +1,37 @@
+ docker --help
+
+Stop a Container
+
+ docker stop container-id
+
+Start a container
+
+  docker start container-id
+
+Remove a container
+  docker rm contianer id
+
+To remove a running container
+  docker rm -f contianer-id
+
+To remove all the container
+
+  docker ps -f $(docker ps -aq)
+
+
+Name a container to use instead of id.
+
+
+Format to see clearly
+
+ docker ps --format= "ID \t{{.ID}}\n"
+
+Docker Volumns
+
+
+[Service]
+Environment="HTTP_PROXY=http://xyz:8080";
+Environment="HTTPS_PROXY=http://xyz:8080;
+
+
+To Run a container:
