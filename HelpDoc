@@ -23,9 +23,11 @@ Name a container to use instead of id.
 
 
 Format to see clearly
+export FORMAT="ID\t{{.ID}}\n"
 
- docker ps --format= "ID \t{{.ID}}\n"
+ docker ps --format= "ID \t{{.CONTAINER ID}}\nIMAGE\t{{.IMAGE}}\nCOMMAND\T{{.COMMAND}}\nCREATED \t{{.CREATED}}\n STATUS \t{{.STATUS}}\nPORTS\t{{.PORTS}}\nNAMES\t{{.NAMES}}\n"
 
+docker container ls --format "ID \t{{.ID}}\nIMAGE\t{{.Image}}\nCOMMAND\T{{.Command}}\nCREATED \t{{.CreatedAt}}\n STATUS \t{{.Status}}\nPORTS\t{{.Ports}}\nNAMES\t{{.Names}}\n"
 Docker Volumns
 
 
@@ -35,3 +37,27 @@ Environment="HTTPS_PROXY=http://xyz:8080;
 
 
 To Run a container:
+
+docker run name:tag
+
+To run a container in detached mode
+
+docker run -d name:tag
+
+#to map the port 
+
+docker run -d -p 8080:80 nginx:latest
+
+If application is running on private subnet, is there any way to access the app on browser? If company applications are launched on private subnet, how they are getting the access?
+
+#Map more than one port
+
+docker run -d -p 8080:80 -p 3000:80 nginx:latest
+
+
+#Managing Container
+
+
+
+
+
