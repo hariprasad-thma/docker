@@ -64,6 +64,20 @@ docker run -d -p 8080:80 -p 3000:80 nginx:latest
 sudo chmod -R 777 /home/ubuntu/
 
 
+ docker run --name nginxWeb -v $(pwd) -d -p 8090:80 nginx
+
+
+#Customize website
+
+#Sharing volume between containers
+
+
+
+Permission Denied Error
+
+sudo chmod 666 /var/run/docker.sock
+
+
 
 
 
