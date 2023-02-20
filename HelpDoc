@@ -90,6 +90,12 @@ Learn about "build a docker image"
 
 #Caching and layers
 
+#Alpine -- to reduce image size
+
+
+
+
+
 
 
 
