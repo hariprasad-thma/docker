@@ -86,6 +86,12 @@ Learn to write a docker file.
 
 Learn about "build a docker image"
 
+".dockerignore"
+
+#Caching and layers
+
+
+
 
 
 
