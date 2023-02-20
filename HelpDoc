@@ -77,6 +77,15 @@ Permission Denied Error
 
 sudo chmod 666 /var/run/docker.sock
 
+create a Dockerfile in root folder of the project
+
+move to place to where you go to generate  (hava a looks on https://www.youtube.com/watch?v=p28piYY_wv8&t=5145s&ab_channel=Amigoscode)
+
+Learn to write a docker file.
+
+
+
+
 
 
 
